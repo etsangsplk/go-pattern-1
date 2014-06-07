@@ -51,7 +51,7 @@ More to come...
 
 Each pattern is defined on a simple Pattern struct, and uses the standard syntax pattern.<Pattern>.Match(string) bool
 ```
-YouPattern := pattern.NewPattern("regex-pattern")
+YouPattern := pattern.New("regex-pattern")
 // Then you can use it as normal
 YouPattern.Match(string)
 ```
