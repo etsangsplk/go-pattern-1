@@ -63,7 +63,7 @@ YouPattern.Match(string)
 - Be happy! :smile:
 
 ### Author
-- (jsimnz)[https://github.com/jsimnz]
+- [jsimnz](https://github.com/jsimnz)
 
 ### LICENCE
 The MIT License (MIT)
