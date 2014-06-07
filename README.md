@@ -3,7 +3,7 @@ Go Regexp Common Patterns
 
 A collection of common regex patters for Go
 
-### Usage
+## Usage
 
 ```
 import (
@@ -29,7 +29,7 @@ func main() {
 
 ```
 
-### Patterns
+## Patterns
 
 ```
 Numeric 				- 	Numeric values.
@@ -47,7 +47,7 @@ IPv6					-	Match an IPv6 address,
 More to come...
 ```
 
-### Create your own pattern
+## Create your own pattern
 
 Each pattern is defined on a simple Pattern struct, and uses the standard syntax regexcom.<Pattern>.Match(string) bool
 ```
@@ -56,16 +56,21 @@ YouPattern := regexcom.NewPattern("regex-pattern")
 YouPattern.Match(string)
 ```
 
-### Contribute
+## Install
+```
+go get github.com/jsimnz/regexcom
+```
+
+## Contribute
 - Fork It
 - Add your own Pattern in top 'var' block
 - Create pull request
 - Be happy! :smile:
 
-### Author
+## Author
 - [jsimnz](https://github.com/jsimnz)
 
-### LICENCE
+## LICENCE
 The MIT License (MIT)
 
 Copyright (c) 2014 John-Alan Simmons
