@@ -1,19 +1,19 @@
-Go Regexp Common Patterns
+Common Go regex patterns
 ========
 
-A collection of common regex patters for Go
+A collection of common regex patters for Go.
 
 ## Usage
 
 ```
 import (
 	"fmt"
-	"github.com/jsimnz/regexcom"
+	"github.com/jsimnz/go-pattern"
 )
 
 func main() {
 	url := "http://github.com"
-	if regexcom.Url.Match(url) {
+	if pattern.Url.Match(url) {
 		fmt.Println("Corret URL!")
 	} else {
 		fmt.Println("Sorry, invalid URL!")
@@ -23,7 +23,7 @@ func main() {
 // The overall pattern for the regex common package
 // is to call Match(s string) on any given pattern
 // Ex
-//    regexcom.<Pattern>.Match(s string) bool
+//    pattern.<Pattern>.Match(s string) bool
 //
 // Look below for available patterns
 
@@ -49,17 +49,20 @@ More to come...
 
 ## Create your own pattern
 
-Each pattern is defined on a simple Pattern struct, and uses the standard syntax regexcom.<Pattern>.Match(string) bool
+Each pattern is defined on a simple Pattern struct, and uses the standard syntax pattern.<Pattern>.Match(string) bool
 ```
-YouPattern := regexcom.NewPattern("regex-pattern")
+YouPattern := pattern.NewPattern("regex-pattern")
 // Then you can use it as normal
 YouPattern.Match(string)
 ```
 
 ## Install
 ```
-go get github.com/jsimnz/regexcom
+go get github.com/jsimnz/go-pattern
 ```
+
+## Status
+Currently still under development, breaking changes may be introduced untill otherwise stated, do not use for production.
 
 ## Contribute
 - Fork It

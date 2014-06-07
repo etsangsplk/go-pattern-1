@@ -1,4 +1,4 @@
-package regexcom
+package pattern
 
 import (
 	"log"
