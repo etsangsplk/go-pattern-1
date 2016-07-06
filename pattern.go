@@ -10,7 +10,7 @@ var (
 	Alpha                = New("^([A-Za-z]+)$")
 	AlphaCapsOnly        = New("^([A-Z]+)$")
 	AlphaNumericCapsOnly = New("^([0-9A-Z]+)$")
-	Url                  = New(`^((https?|ftps?):\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$`)
+	Url                  = New(`^((http?|https?|ftps?):\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$`)
 	Email                = New(`^(.+@([\da-z\.-]+)\.([a-z\.]{2,6}))$`)
 	HashtagHex           = New(`^#([a-f0-9]{6}|[a-f0-9]{3})$`)
 	ZeroXHex             = New(`^0x([a-f0-9]+|[A-F0-9]+)$`)
